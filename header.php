@@ -23,18 +23,18 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/css/style.css") ?>
+  <?php versioned_stylesheet(get_bloginfo('stylesheet_directory')."/html5-boilerplate/css/style.css") ?>
  
   
   <!-- Wordpress Head Items -->
-  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
        Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
        for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/libs/modernizr-2.0.6.min.js") ?>
+  <?php versioned_javascript(get_bloginfo('stylesheet_directory')."/html5-boilerplate/js/libs/modernizr-2.0.6.min.js") ?>
   
   
   <?php wp_head(); ?>
